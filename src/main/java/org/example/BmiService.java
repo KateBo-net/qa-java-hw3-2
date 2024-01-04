@@ -8,7 +8,6 @@ public class BmiService {
 
         double bmiValue = weight / Math.pow(height / 100, 2);
         double scale = Math.pow(10, 2);
-        double bmiResult = Math.round(bmiValue * scale) / scale;
-        return bmiResult;
+        return Math.round(bmiValue * scale) / scale;
     }
 }
